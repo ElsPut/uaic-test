@@ -52,5 +52,5 @@ jobs:
           deploymentName: ${{github.run_number}}
           resourceGroupName: ${{env.RG_NAME}}
           template: ./blobcontainer.bicep
-          parameters: saname=${{steps.deploy-sa.outputs.saname}}
+          parameters: mysaname=${{steps.deploy-sa.outputs.mysaname}}
 
